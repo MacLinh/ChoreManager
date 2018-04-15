@@ -1,0 +1,26 @@
+<div class="row">
+    <div class="col-sm-3">
+        <h3>Users</h3>
+        <ul>
+            <li *ngFor="let user of users">
+                <font class="clickable" (click)="selectUser(user)">{{user.name}}</font>
+            </li>
+        </ul>
+    </div>
+    <div class="col-sm-6">
+        <div *ngIf="selectedUser != undefined">
+            <h3>{{selectedUser.name}}'s Chores</h3>
+            <ol>
+                <li *ngFor="let chore of selectedUser.chores">
+                    <font class="clickable">{{chore.name}}</font>
+                </li>
+            </ol>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div *ngIf="selectedUser != undefined">
+            <h3>{{selectedUser.score}} Points</h3>
+        </div>
+    </div>
+</div>
+<hr />

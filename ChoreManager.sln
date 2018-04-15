@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChoreManager", "ChoreManager\ChoreManager.csproj", "{0CD0C0C7-2705-456D-BFC1-A848DE05E171}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0CD0C0C7-2705-456D-BFC1-A848DE05E171}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CD0C0C7-2705-456D-BFC1-A848DE05E171}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CD0C0C7-2705-456D-BFC1-A848DE05E171}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CD0C0C7-2705-456D-BFC1-A848DE05E171}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4C2DE568-21A0-4CDF-9AD3-03BBF063FBFD}
+	EndGlobalSection
+EndGlobal
