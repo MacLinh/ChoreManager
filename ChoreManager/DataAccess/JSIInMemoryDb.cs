@@ -23,12 +23,16 @@ namespace ChoreManager.DataAccess
  		int counter = 0;  
  		string ln;  
   
- 		while ((ln = file.ReadLine()) != null) {  
-  			this._parsedResults.Add(new JSISms{
-				From = "t",
-				To = "f",
-				DateTime = "g",
-				Text = ln});  
+ 		while ((ln = file.ReadLine()) != null) {
+			string[] data = ln.Split("|");
+			if (counter > 0)  
+  				this._parsedResults.Add(new JSISms
+					{
+					From = data[0],
+					To = data[1],
+					DateTime = data[2],
+					Text = data[3]
+					});  
   			counter++;  
  		}  
  		file.Close();  
