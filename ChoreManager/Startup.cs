@@ -30,6 +30,7 @@ namespace ChoreManager
             services.AddSingleton<IDbFactory, SQLiteDbFactory>(c => new SQLiteDbFactory(Configuration.GetConnectionString("sqlite" )));
             services.AddTransient<IRepository<User>, UserRepository>();
             services.AddTransient<IRepository<Chore>, ChoreRepository>();
+	    services.AddTransient<IRepository<JSISms>, JSIInMemorySmsDb>();
         }
    
 
