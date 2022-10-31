@@ -8,11 +8,11 @@ using Dapper;
 
 namespace ChoreManager.DataAccess
 {
-    public class JSIInMemoryDb : IRepository<JSISms>
+    public class JSIInMemorySmsDb : IRepository<JSISms>
     {
         private List<JSISms> _parsedResults;
 
-        public JSIInMemoryDb()
+        public JSIInMemorySmsDb()
         {
             this._parsedResults = new List<JSISms>();
 	    this.readFile("resources/Sms.txt");

@@ -38,11 +38,20 @@ namespace ChoreManager.Controllers
             return StatusCode(200, _sms.GetAll());
         }
 
-        // POST api/<controller>
-        [HttpPost]
-        public StatusCodeResult Post([FromBody] JSISms value)
+        // POST api/jsi/timefilter
+        [HttpPost("timefilter")]
+        public StatusCodeResult Post([FromBody] TimeFilter filter)
         {
-            throw new NotImplementedException();
+	    // match the types to the correct repository (such as sms)
+	    // return error if not supported
+
+            // run through repository to check if date time is valid
+
+	    // var sms = _sms.GetAll()) 
+
+	    // do logic
+
+            throw new NotImplementedException();   
         }
 
         // PUT api/<controller>/name
