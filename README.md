@@ -10,13 +10,17 @@ I used this existing functioning web app to add the api/jsi endpoint
 
 to run:
 
+
 npm i
 
 dotnet run
 
+
 Will start development server at localhost:5000
+
 
 working endpoints:
 
 GET http://localhost:5000/api/jsi/sms
+
 GET http://localhost:5000/api/jsi/types
